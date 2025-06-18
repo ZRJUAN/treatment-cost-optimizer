@@ -10,7 +10,7 @@ st.title("Treatment Cost Optimizer")
 st.markdown("Optimize healthcare spending by comparing provider costs and ratings.")
 
 # Sidebar with filters and branding
-st.sidebar.image("https://via.placeholder.com/150x50.png?text=Your+Logo", use_column_width=True)
+st.sidebar.image("https://via.placeholder.com/150x50.png?text=Your+Logo", use_container_width=True)
 st.sidebar.header("Filter Options")
 
 # File uploader
