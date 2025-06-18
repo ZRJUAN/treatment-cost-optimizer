@@ -3,14 +3,19 @@ import streamlit as st
 import pandas as pd
 
 # Set page config
-st.set_page_config(page_title="Treatment Cost Optimizer", layout="wide")
+st.set_page_config(page_title="InsightRx - Treatment Cost Optimizer", layout="wide")
 
-# App title
-st.title("Treatment Cost Optimizer")
-st.markdown("Optimize healthcare spending by comparing provider costs and ratings.")
+# App title and branding
+st.markdown(
+    f"<div style='display:flex; align-items:center;'>"
+    f"<img src='https://upload.wikimedia.org/wikipedia/commons/8/8e/InsightRx_logo_sample.png' width='160' style='margin-right:20px;'/>"
+    f"<h1 style='margin: 0;'>InsightRx</h1></div>",
+    unsafe_allow_html=True
+)
+st.markdown("### Optimize healthcare spending through data-driven treatment decisions.")
 
 # Sidebar with filters and branding
-st.sidebar.image("https://via.placeholder.com/150x50.png?text=Your+Logo", use_container_width=True)
+st.sidebar.image("https://upload.wikimedia.org/wikipedia/commons/8/8e/InsightRx_logo_sample.png", use_container_width=True)
 st.sidebar.header("Filter Options")
 
 # File uploader
